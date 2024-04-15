@@ -22,10 +22,10 @@ public class CalculatriceTest {
 //TODO : Vérification qu'aucune autre méthode n'a été appelée sur
 //      l'objet après l'appel de la méthode "additionner", utiliser la
 // méthode « verifyNoMoreInteractions »
-        verify(calculatrice).additionner(2, 3);
+        verifyNoMoreInteractions(calculatrice);
 // TODO : Vérification de l'état de l'objet après l'appel de la
 //   méthode "additionner", penser à utiliser la méthode
 //   « getState() » de la directive « verify » : // exemple :
-        //verify(calculatrice).getState();
+       // verify(calculatrice).getState();
     }
 }
